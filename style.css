@@ -185,16 +185,16 @@ td {
 
 /* 【パソコン・基本】アバター画像たちが並ぶエリア */
 .avatar-list {
-    display: flex;       /* 横並びにするスイッチ */
-    flex-wrap: wrap;     /* 画面幅が狭くなったら自動で折り返す */
-    gap: 16px;           /* アバター同士のすき間 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 100%;
 }
 
 /* アバター１つずつのカード枠 */
 .avatar-card {
     display: inline-block;
     text-align: center;
-    margin-right: 16px; 
     color: #ecebec;
     font-size: 80%;
     vertical-align: top;
@@ -218,6 +218,9 @@ td {
 }
 
 .activity-toggle {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin-top: 24px;
     border-top: 1px solid #4a494f;
     border-bottom: 1px solid #4a494f;
@@ -250,6 +253,10 @@ td {
 }
 
 .toggle-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
     padding: 0 4px 20px;
     line-height: 1.7;
 }

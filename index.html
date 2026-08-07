@@ -274,7 +274,43 @@
 </details>
 
 </div>
+
+<!-- JavaScript -->
+
+<script>
+    // JavaScript
+</script>
 <br>
+
+<script>
+document.querySelectorAll(".activity-toggle").forEach((details) => {
+    details.addEventListener("toggle", () => {
+        if (!details.open) return;
+
+        setTimeout(() => {
+            const content = details.querySelector(".toggle-content");
+
+            if (!content) return;
+
+            const contentBottom =
+                content.getBoundingClientRect().bottom + window.scrollY;
+
+            const viewportBottom =
+                window.scrollY + window.innerHeight;
+
+            if (contentBottom > viewportBottom) {
+                const scrollAmount =
+                    contentBottom - viewportBottom + 40;
+
+                window.scrollBy({
+                    top: scrollAmount,
+                    behavior: "smooth"
+                });
+            }
+        }, 100);
+    });
+});
+</script>
 
 </body>
 </html>
