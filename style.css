@@ -216,4 +216,40 @@ td {
 .info-section.avatar-section {
     margin-top: 55px;
 }
+
+.activity-toggle {
+    margin-top: 24px;
+    border-top: 1px solid #4a494f;
+    border-bottom: 1px solid #4a494f;
+}
+
+.activity-toggle + .activity-toggle {
+    margin-top: 12px;
+}
+
+.activity-toggle summary {
+    cursor: pointer;
+    padding: 16px 4px;
+    font-weight: bold;
+    color: #ecebec;
+    list-style: none;
+}
+
+.activity-toggle summary::-webkit-details-marker {
+    display: none;
+}
+
+.activity-toggle summary::after {
+    content: "＋";
+    float: right;
+    color: #84b9cb;
+}
+
+.activity-toggle[open] summary::after {
+    content: "－";
+}
+
+.toggle-content {
+    padding: 0 4px 20px;
+    line-height: 1.7;
 }
