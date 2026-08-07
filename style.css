@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+*:focus {
+    outline: none;
+}
+
+html {
+    min-height: 100%;
+    word-wrap: normal;
+}
+
+.header-image {
+    display: block;
+    width: 240px;
+    height: auto;
+    margin: 0 0 20px 0;
+    align-self: flex-start;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 100%;
+    color: #ecebec;
+    background-color: #2f2e33;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+    font-family: "WDXL Lubrifont JP N";
+}
+
+a {
+    color: #84b9cb;
+    text-decoration: none;
+}
+
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-align: left;
+}
+
+.prof2 {
+    font-size: 80%;
+}
+
+.prof2 th {
+    font-size: 90%;
+}
+
+.prof {
+    display: inline-block;
+}
+
+.icon {
+    width: 150px;
+    border-radius: 10%;
+}
+
+.appicons {
+    margin: 0.15em;
+    height: 1.4em;
+    vertical-align: middle;
+    border-radius: 30%;
+}
+
+.setsumei td {
+    min-width: 5em;
+}
+
+.setsumei th {
+    padding-left: 2em;
+    font-size: 80%;
+    color: #C8C6C4;
+}
+
+.container {
+    width: fit-content;
+}
+
+@media screen and (min-width:961px) {
+    /*pc用のcssを記述*/
+}
+
+/* ===================================================
+   スマホ用のスタイル（画面幅500px以下の時だけ効く）
+=================================================== */
+@media only screen and (max-width:500px) {
+    body {
+        font-size: 4vw;
+    }
+
+    table, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 85%;
+        vertical-align: baseline;
+        background: transparent;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+    .setsumei th {
+        padding-left: 1em;
+        font-size: 80%;
+    }
+
+    .setsumei td {
+        font-size: 100%;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    /* 【スマホ専用】アバターを横2列にする設定 */
+    .avatar-list {
+        display: grid !important; /* 強制的にグリッド表示にします */
+        grid-template-columns: repeat(2, 1fr) !important; /* 強制的に2列にします */
+        gap: 12px;
+    }
+
+    .avatar-card {
+        margin-right: 0;
+    }
+
+    .avataricon {
+        width: 100%;
+        max-width: 140px;
+    }
+}
+
+
+/* ===================================================
+   追加・整理した新しいスタイル（パソコン・基本設定）
+=================================================== */
+
+/* テーブル（プロフィール）の下側に余白を作る */
+.setsumei {
+    margin-bottom: 24px;
+}
+
+/* イベントやアバターなどの各セクション全体 */
+.info-section {
+    margin-top: 28px;
+    text-align: left;
+}
+
+/* 「🎉 イベントキャスト情報」「👕 メインアバター」の文字共通スタイル */
+.section-title {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* イベントキャスト情報の詳細テキスト */
+.event-details {
+    font-size: 85%;
+    color: #ecebec;
+    line-height: 1.6;
+}
+
+/* 【パソコン・基本】アバター画像たちが並ぶエリア */
+.avatar-list {
+    display: flex;       /* 横並びにするスイッチ */
+    flex-wrap: wrap;     /* 画面幅が狭くなったら自動で折り返す */
+    gap: 16px;           /* アバター同士のすき間 */
+}
+
+/* アバター１つずつのカード枠 */
+.avatar-card {
+    display: inline-block;
+    text-align: center;
+    margin-right: 16px; 
+    color: #ecebec;
+    font-size: 80%;
+    vertical-align: top;
+}
+
+/* アバター画像自体のデザイン */
+.avataricon {
+    width: 155px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    transition: .2s;
+}
+
+.avataricon:hover {
+    transform: scale(1.05);
+}
+
+/* メインアバターのグループの上側だけ、さらに余白を追加する */
+.info-section.avatar-section {
+    margin-top: 55px;
+}
+}
