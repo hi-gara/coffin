@@ -183,10 +183,10 @@ td {
     line-height: 1.6;
 }
 
-/* 【パソコン・基本】アバター画像たちが並ぶエリア */
+/* 【パソコン・基本】アバターを1行2個ずつ並べる */
 .avatar-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
     gap: 16px;
     max-width: 100%;
 }
