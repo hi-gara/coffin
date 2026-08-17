@@ -266,3 +266,18 @@ td {
     padding: 0 4px 20px;
     line-height: 1.7;
 }
+
+.event-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #4a494f;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-name {
+    display: inline-block;
+    font-size: 125%;
+    margin-bottom: 6px;
+}
