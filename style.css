@@ -286,10 +286,10 @@ td {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-
-    /* 親要素の横幅に合わせる */
     width: 100%;
-    max-width: 100%;
+    max-width: 580px;
+
+    margin: 24px 0;
 }
 
 .service-card {
@@ -302,12 +302,7 @@ td {
 
 .service-thumbnail {
     display: block;
-
-    /* 各列の幅に自動で合わせる */
     width: 100%;
-    height: auto;
-
-    /* 3:4を維持 */
     aspect-ratio: 3 / 4;
     object-fit: cover;
 
