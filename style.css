@@ -282,19 +282,19 @@ td {
     margin-bottom: 6px;
 }
 
-/* ===================================================
-   感想フォーム・Skeb サムネイル
-=================================================== */
-
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(3, 140px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-    margin: 24px 0;
+
+    /* 親要素の横幅に合わせる */
+    width: 100%;
+    max-width: 100%;
 }
 
 .service-card {
     display: block;
+    min-width: 0;
     color: #ecebec;
     font-size: 80%;
     text-align: center;
@@ -302,12 +302,24 @@ td {
 
 .service-thumbnail {
     display: block;
-    width: 140px;
+
+    /* 各列の幅に自動で合わせる */
+    width: 100%;
+    height: auto;
+
+    /* 3:4を維持 */
     aspect-ratio: 3 / 4;
     object-fit: cover;
+
     border-radius: 8px;
     margin-bottom: 8px;
+
     transition:
         transform 0.2s ease,
         opacity 0.2s ease;
+}
+
+.service-card:hover .service-thumbnail {
+    transform: scale(1.03);
+    opacity: 0.85;
 }
