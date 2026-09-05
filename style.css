@@ -261,6 +261,7 @@ td {
     font-weight: bold;
     color: #ecebec;
     list-style: none;
+    font-size: 100%;
 }
 
 .activity-toggle summary::-webkit-details-marker {
@@ -284,6 +285,7 @@ td {
     overflow-x: hidden;
     padding: 0 4px 20px;
     line-height: 1.7;
+    font-size: 100%;
 }
 
 .event-item {
