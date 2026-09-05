@@ -57,6 +57,9 @@ td {
 
 .prof2 {
     font-size: 80%;
+    width: 580px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .prof2 th {
@@ -138,6 +141,10 @@ td {
     .container {
         width: 80%;
     }
+
+    .prof2 {
+    width: 100%;
+    }   
 
     /* 【スマホ専用】アバターを横2列にする設定 */
     .avatar-list {
