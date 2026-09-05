@@ -343,15 +343,18 @@ td {
 
 .social-links {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: 12px 20px;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
     margin: 24px 0;
+    align-items: center;
+    justify-items: center;
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
     display: block;
     border-radius: 8px;
