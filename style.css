@@ -62,23 +62,13 @@ td {
     box-sizing: border-box;
 }
 
-.prof2 table,
 .profile-text {
-    width: 400px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.prof2 table {
-    wwidth: 400px;
-    max-width: 100%;
-}
-
-.profile-text {
-    width: 400px;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     margin-bottom: 24px;
+    text-align: center;
+    line-height: 1.7;
 }
 
 .prof2 p {
