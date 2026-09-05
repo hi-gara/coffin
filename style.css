@@ -62,8 +62,23 @@ td {
     box-sizing: border-box;
 }
 
+.prof2 table,
+.profile-text {
+    width: 540px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .prof2 table {
-    width: 100%;
+    width: 540px;
+    max-width: 100%;
+}
+
+.profile-text {
+    width: 540px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
 }
 
 .prof2 p {
@@ -296,9 +311,8 @@ td {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-    width: 100%;
-    max-width: 580px;
-
+    width: 540px;
+    max-width: 100%;
     margin: 24px 0;
 }
 
@@ -327,10 +341,4 @@ td {
 .service-card:hover .service-thumbnail {
     transform: scale(1.03);
     opacity: 0.85;
-}
-
-.profile-text {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 24px;
 }
