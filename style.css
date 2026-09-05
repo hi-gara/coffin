@@ -242,6 +242,7 @@ td {
 }
 
 .activity-toggle {
+    display: block;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -353,6 +354,7 @@ td {
     height: 32px;
     object-fit: contain;
     display: block;
+    border-radius: 8px;
     transition: 0.2s;
 }
 
