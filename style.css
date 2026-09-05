@@ -62,13 +62,12 @@ td {
     box-sizing: border-box;
 }
 
-.prof2 th {
-    font-size: 90%;
+.prof2 table {
+    width: 100%;
 }
 
-.prof {
-    display: block;
-    text-align: center;
+.prof2 p {
+    width: 100%;
 }
 
 .icon {
@@ -328,4 +327,10 @@ td {
 .service-card:hover .service-thumbnail {
     transform: scale(1.03);
     opacity: 0.85;
+}
+
+.profile-text {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
 }
