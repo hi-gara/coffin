@@ -57,7 +57,7 @@ td {
 
 .prof2 {
     font-size: 80%;
-    width: 580px;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -112,7 +112,9 @@ td {
 }
 
 .container {
-    width: fit-content;
+    width: 540px;
+    max-width: calc(100% - 32px);
+    box-sizing: border-box;
 }
 
 @media screen and (min-width:961px) {
@@ -153,7 +155,8 @@ td {
     }
 
     .container {
-        width: 80%;
+        width: 100%;
+        max-width: calc(100% - 32px);
     }
 
     .prof2 {
@@ -311,10 +314,8 @@ td {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-
-    width: 400px;
+    width: 100%;
     max-width: 100%;
-
     margin: 24px 0;
 }
 
@@ -343,4 +344,28 @@ td {
 .service-card:hover .service-thumbnail {
     transform: scale(1.03);
     opacity: 0.85;
+}
+
+.prof {
+    text-align: center;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 12px 20px;
+    margin: 24px 0;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    transition: 0.2s;
+}
+
+.social-links a:hover .social-icon {
+    transform: scale(1.1);
 }
