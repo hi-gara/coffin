@@ -64,18 +64,18 @@ td {
 
 .prof2 table,
 .profile-text {
-    width: 540px;
+    width: 400px;
     max-width: 100%;
     box-sizing: border-box;
 }
 
 .prof2 table {
-    width: 540px;
+    wwidth: 400px;
     max-width: 100%;
 }
 
 .profile-text {
-    width: 540px;
+    width: 400px;
     max-width: 100%;
     box-sizing: border-box;
     margin-bottom: 24px;
@@ -311,8 +311,10 @@ td {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-    width: 540px;
+
+    width: 400px;
     max-width: 100%;
+
     margin: 24px 0;
 }
 
