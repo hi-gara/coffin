@@ -132,7 +132,11 @@ td {
     }
 
     .icon {
-        width: 50%;
+        width: 150px;
+        height: 150px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     .setsumei th {
@@ -364,4 +368,18 @@ td {
 
 .social-links a:hover .social-icon {
     transform: scale(1.1);
+}
+
+/* イベント情報の余白調整 */
+.info-section {
+    margin-bottom: 12px;
+}
+
+.event-details {
+    margin-top: 4px;
+}
+
+.event-item {
+    margin-top: 0;
+    padding-top: 0;
 }
