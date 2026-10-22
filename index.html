@@ -114,10 +114,8 @@
 
 </div>
 
-            <details class="activity-toggle">
-    <summary>🎲 TRPG関連</summary>
-
-    <div class="toggle-content">
+            <section class="activity-section">
+    <h2 class="activity-heading">🎲 TRPG関連</h2>
         <p>
             TRPG関連のまとめです。<br>
             立ち絵・通過報告・ふせったーなどはこちら。
@@ -157,13 +155,10 @@
                 <th>TRPGメインでネタバレの話をしています</th>
             </tr>
         </table>
-    </div>
-</details>
+</section>
           
-            <details class="activity-toggle">
-    <summary>🥽 VRChat関連</summary>
-
-    <div class="toggle-content">
+            <section class="activity-section">
+    <h2 class="activity-heading">🥽 VRChat関連</h2>
         <p>VRChatでの活動まとめです。</p>
 
         <table class="setsumei">
@@ -268,42 +263,9 @@
                 </a>
             </div>
         </div>
-    </div>
-</details>
+    </section>
 
 </div>
-
-<!-- JavaScript -->
-
-<script>
-document.querySelectorAll(".activity-toggle").forEach((details) => {
-    details.addEventListener("toggle", () => {
-        if (!details.open) return;
-
-        setTimeout(() => {
-            const content = details.querySelector(".toggle-content");
-
-            if (!content) return;
-
-            const contentBottom =
-                content.getBoundingClientRect().bottom + window.scrollY;
-
-            const viewportBottom =
-                window.scrollY + window.innerHeight;
-
-            if (contentBottom > viewportBottom) {
-                const scrollAmount =
-                    contentBottom - viewportBottom + 40;
-
-                window.scrollBy({
-                    top: scrollAmount,
-                    behavior: "smooth"
-                });
-            }
-        }, 100);
-    });
-});
-</script>
 
 </body>
 </html>
